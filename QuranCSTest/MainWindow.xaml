@@ -1,0 +1,50 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Properties="clr-namespace:QuranCSTest.Properties" xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="QuranCSTest.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <RichTextBox Margin="15,89,15,15" FontFamily="me_quran" FontSize="16" IsReadOnly="True" SelectionOpacity="0" RenderTransformOrigin="0.5,0.5">
+            <RichTextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.153"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.664"/>
+                </TransformGroup>
+            </RichTextBox.RenderTransform>
+            <RichTextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="94" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFFBFFE8" Offset="0.08"/>
+                    <GradientStop Color="#FFF6FFD3" Offset="0.5"/>
+                    <GradientStop Color="#FFFAFFE7" Offset="0.081"/>
+                    <GradientStop Color="#FFFAFFE7" Offset="0.92"/>
+                </LinearGradientBrush>
+            </RichTextBox.Background>
+            <FlowDocument FlowDirection="RightToLeft">
+                <Paragraph x:Name="DisplayParagraph"  TextAlignment="Justify" >
+
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <ComboBox x:Name="SurahComboBox" HorizontalAlignment="Left" Margin="82,18,0,0" VerticalAlignment="Top" Width="188" Height="25" IsSynchronizedWithCurrentItem="False" SelectionChanged="SurahBox_SelectionChanged">
+        </ComboBox>
+        <ComboBox x:Name="AyahComboBox" HorizontalAlignment="Left" Margin="386,18,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.199,0.017" FontFamily="me_quran" Height="25"/>
+        <Label Content="Surah" HorizontalAlignment="Left" Margin="28,16,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ayah" HorizontalAlignment="Left" Margin="341,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.588,1.006" FontFamily="me"/>
+        <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Height="23" Margin="82,59,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="188"/>
+        <Label Content="Search" HorizontalAlignment="Left" Margin="28,58,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.588,1.006" FontFamily="me"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="386,59,0,0" VerticalAlignment="Top" Width="114" Height="23" Click="SearchButton_Click"/>
+
+    </Grid>
+</Window>
