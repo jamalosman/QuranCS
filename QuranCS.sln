@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuranCS", "QuranCS\QuranCS.csproj", "{0FE02364-D090-476D-896C-62541DFC71E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuranCSTest", "QuranCSTest\QuranCSTest.csproj", "{FC214228-DE9C-42EC-8096-DBC6DB9D198F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0FE02364-D090-476D-896C-62541DFC71E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FE02364-D090-476D-896C-62541DFC71E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FE02364-D090-476D-896C-62541DFC71E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC214228-DE9C-42EC-8096-DBC6DB9D198F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC214228-DE9C-42EC-8096-DBC6DB9D198F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC214228-DE9C-42EC-8096-DBC6DB9D198F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC214228-DE9C-42EC-8096-DBC6DB9D198F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
