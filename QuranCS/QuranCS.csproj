@@ -34,8 +34,11 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <Content Include="quran-data.xml" />
-    <Content Include="quran-uthmani.xml" />
+    <EmbeddedResource Include="quran-data.xml" />
+    <EmbeddedResource Include="quran-simple.xml" />
+    <EmbeddedResource Include="quran-uthmani.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ayah.cs" />
